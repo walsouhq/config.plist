@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+
+    <!-- ACPI -->
     <key>ACPI</key>
     <dict>
         <key>Add</key><array/>
@@ -16,27 +18,18 @@
             <key>ResetHwSig</key><true/>
         </dict>
     </dict>
+
+    <!-- Booter -->
     <key>Booter</key>
     <dict>
         <key>Quirks</key>
         <dict>
-            <key>AppleCpuPmCfgLock</key><true/>
-            <key>AppleXcpmCfgLock</key><true/>
-            <key>DisableIoMapper</key><false/>
             <key>EnableSafeModeSlide</key><true/>
             <key>ForceBooterSignature</key><false/>
         </dict>
     </dict>
-    <key>CPU</key>
-    <dict>
-        <key>Count</key><integer>6</integer>
-        <key>Frequency</key><integer>2700</integer>
-    </dict>
-    <key>DeviceProperties</key>
-    <dict>
-        <key>Add</key>
-        <dict/>
-    </dict>
+
+    <!-- Kernel -->
     <key>Kernel</key>
     <dict>
         <key>Add</key>
@@ -58,15 +51,17 @@
                 <key>Enabled</key><true/>
             </dict>
             <dict>
-                <key>BundlePath</key><string>AirportItlwm.kext</string>
+                <key>BundlePath</key><string>NVMeFix.kext</string>
                 <key>Enabled</key><true/>
             </dict>
             <dict>
-                <key>BundlePath</key><string>NVMeFix.kext</string>
+                <key>BundlePath</key><string>AirportItlwm.kext</string>
                 <key>Enabled</key><true/>
             </dict>
         </array>
     </dict>
+
+    <!-- NVRAM -->
     <key>NVRAM</key>
     <dict>
         <key>Add</key>
@@ -80,8 +75,9 @@
             </dict>
         </dict>
         <key>Delete</key><dict/>
-        <key>LegacyEnable</key><false/>
     </dict>
+
+    <!-- PlatformInfo -->
     <key>PlatformInfo</key>
     <dict>
         <key>Generic</key>
@@ -92,17 +88,20 @@
             <key>SystemUUID</key><string>11111111-2222-3333-4444-555555555555</string>
         </dict>
     </dict>
+
+    <!-- UEFI -->
     <key>UEFI</key>
     <dict>
         <key>Drivers</key>
         <array>
-            <string>OpenRuntime.efi</string>
             <string>HfsPlus.efi</string>
+            <string>OpenRuntime.efi</string>
         </array>
         <key>Quirks</key>
         <dict>
             <key>ExitBootServicesDelay</key><integer>0</integer>
         </dict>
     </dict>
+
 </dict>
 </plist>
