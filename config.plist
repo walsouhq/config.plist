@@ -71,11 +71,10 @@
                 <key>boot-args</key>
                 <string>-v keepsyms=1 debug=0x100</string>
                 <key>csr-active-config</key>
-                <data>AA==</data> <!-- désactive SIP -->
+                <data>AA==</data>
             </dict>
         </dict>
         <key>Delete</key><dict/>
-        <key>LegacyEnable</key><false/>
     </dict>
 
     <!-- PlatformInfo -->
@@ -104,12 +103,12 @@
         </dict>
     </dict>
 
-    <!-- Misc / Security -->
+    <!-- Misc -->
     <key>Misc</key>
     <dict>
         <key>Security</key>
         <dict>
-            <key>Vault</key><false/> <!-- désactive Vault pour ne plus avoir d'erreur -->
+            <key>Vault</key><false/>
         </dict>
     </dict>
 
