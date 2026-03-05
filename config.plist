@@ -75,6 +75,7 @@
             </dict>
         </dict>
         <key>Delete</key><dict/>
+        <key>LegacyEnable</key><false/>
     </dict>
 
     <!-- PlatformInfo -->
@@ -100,6 +101,15 @@
         <key>Quirks</key>
         <dict>
             <key>ExitBootServicesDelay</key><integer>0</integer>
+        </dict>
+    </dict>
+
+    <!-- Misc / Security -->
+    <key>Misc</key>
+    <dict>
+        <key>Security</key>
+        <dict>
+            <key>Vault</key><false/> <!-- désactive Vault pour ne plus avoir d'erreur -->
         </dict>
     </dict>
 
